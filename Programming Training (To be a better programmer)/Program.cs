@@ -1,10 +1,21 @@
-﻿using Programming_Training__To_be_a_better_programmer_.Static_Data;
+﻿using Programming_Training__To_be_a_better_programmer_.OOP.Abstraction;
+using Programming_Training__To_be_a_better_programmer_.OOP.Inheritance;
+using Programming_Training__To_be_a_better_programmer_.OOP.Polymorphism;
+using Programming_Training__To_be_a_better_programmer_.Static_Data;
 using Del = Programming_Training__To_be_a_better_programmer_.Static_Data.DelegationSample;
 class Program
 {
     static void Main()
     {
-        PureFunction001();
+        Ninja naruto = new Naruto();
+        Ninja sasuke = new Sasuke();
+        Ninja hinata = new Hinata();
+
+        hinata.Jutsu();
+        sasuke.Jutsu();
+        naruto.Jutsu();
+
+        naruto.Fight();
     }
 
     public static void PureFunction001()
