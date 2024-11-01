@@ -1,4 +1,6 @@
-﻿using Programming_Training__To_be_a_better_programmer_.OOP.Abstraction;
+﻿using Programming_Training__To_be_a_better_programmer_.Generic;
+using Programming_Training__To_be_a_better_programmer_.OOP.Abstraction;
+using Programming_Training__To_be_a_better_programmer_.OOP.Encapsulation;
 using Programming_Training__To_be_a_better_programmer_.OOP.Inheritance;
 using Programming_Training__To_be_a_better_programmer_.OOP.Polymorphism;
 using Programming_Training__To_be_a_better_programmer_.Static_Data;
@@ -10,6 +12,12 @@ class Program
         Ninja naruto = new Naruto();
         Ninja sasuke = new Sasuke();
         Ninja hinata = new Hinata();
+        SampleGeneric<Naruto> sampleGeneric = new SampleGeneric<Naruto>();
+        sampleGeneric.Execute();
+
+
+
+        
 
         hinata.Jutsu();
         sasuke.Jutsu();

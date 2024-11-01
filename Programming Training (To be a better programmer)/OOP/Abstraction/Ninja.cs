@@ -14,6 +14,7 @@ namespace Programming_Training__To_be_a_better_programmer_.OOP.Abstraction
 
         public virtual void Jutsu() => Console.WriteLine("Transform");
 
+        //This is the sample of recursive
         public void Fight(int round = 1)
         {
             if (round == 3) { Console.WriteLine("Draw"); return; }
