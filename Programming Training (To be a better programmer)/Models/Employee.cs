@@ -18,9 +18,9 @@ namespace Programming_Training__To_be_a_better_programmer_.Models
             }
             set 
             {
-                if (_salary <= 10000) Console.WriteLine("The salary is not fair for this position");
-                
                 _salary = value;
+                if (_salary <= 10000) Console.WriteLine("The salary is not fair for this position");
+ 
             } 
         }
     }

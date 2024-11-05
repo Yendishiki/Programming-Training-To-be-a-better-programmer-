@@ -12,7 +12,7 @@ class Program
 
     }
 
-    public void GetAndSetProperty()
+    public static void GetAndSetProperty()
     {
         var employee = new Employee()
         {
