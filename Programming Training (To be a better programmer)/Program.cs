@@ -1,29 +1,26 @@
-﻿using Programming_Training__To_be_a_better_programmer_.Generic;
-using Programming_Training__To_be_a_better_programmer_.OOP.Abstraction;
-using Programming_Training__To_be_a_better_programmer_.OOP.Encapsulation;
-using Programming_Training__To_be_a_better_programmer_.OOP.Inheritance;
-using Programming_Training__To_be_a_better_programmer_.OOP.Polymorphism;
+﻿
+using Programming_Training__To_be_a_better_programmer_.Base;
 using Programming_Training__To_be_a_better_programmer_.Static_Data;
+using Base = Programming_Training__To_be_a_better_programmer_.Base;
+
 using Del = Programming_Training__To_be_a_better_programmer_.Static_Data.DelegationSample;
 class Program
 {
     static void Main()
     {
-        Ninja naruto = new Naruto();
-        Ninja sasuke = new Sasuke();
-        Ninja hinata = new Hinata();
-        SampleGeneric<Naruto> sampleGeneric = new SampleGeneric<Naruto>();
-        sampleGeneric.Execute();
 
+    }
 
+    public void BaseClassSample()
+    {
+        // ---1
+      //  Parent parent = new Child();
 
-        
+        // ---2
+      //  Parent parent = new Child("call");
 
-        hinata.Jutsu();
-        sasuke.Jutsu();
-        naruto.Jutsu();
-
-        naruto.Fight();
+        // ---3
+        Parent parent = new Child("call", "call2");
     }
 
     public static void PureFunction001()

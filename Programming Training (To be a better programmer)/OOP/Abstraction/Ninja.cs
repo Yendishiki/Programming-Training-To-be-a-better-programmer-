@@ -12,7 +12,7 @@ namespace Programming_Training__To_be_a_better_programmer_.OOP.Abstraction
         public string Fullname { get; set; }
         public void DoSomething() => Console.WriteLine("Run");
 
-        public virtual void Jutsu() => Console.WriteLine("Transform");
+        public abstract void Jutsu();
 
         //This is the sample of recursive
         public void Fight(int round = 1)
