@@ -13,5 +13,7 @@ namespace Programming_Training__To_be_a_better_programmer_.Base
         public Child(string addSub) : this() => Console.WriteLine("Call the default messages");
 
         public Child(string addSub, string otherSub) : base(addSub, otherSub) => Console.WriteLine("Call the child class with parameters");
+
+        public Child(int No) => base.MethodParent();
     }
 }

@@ -8,7 +8,7 @@ class Program
 {
     static void Main()
     {
-
+       
     }
 
     public void BaseClassSample()

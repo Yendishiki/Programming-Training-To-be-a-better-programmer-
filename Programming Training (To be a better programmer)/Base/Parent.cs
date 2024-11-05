@@ -11,5 +11,7 @@ namespace Programming_Training__To_be_a_better_programmer_.Base
         public Parent() => Console.WriteLine("Default Parent");
 
         public Parent(string addSub, string otherSub) => Console.WriteLine("Call the parent class with parameters");
+
+        public void MethodParent()  => Console.WriteLine("Method Parent");
     }
 }
