@@ -1,5 +1,6 @@
 ﻿
 using Programming_Training__To_be_a_better_programmer_.Base;
+using Programming_Training__To_be_a_better_programmer_.Models;
 using Programming_Training__To_be_a_better_programmer_.Static_Data;
 using Base = Programming_Training__To_be_a_better_programmer_.Base;
 
@@ -8,7 +9,18 @@ class Program
 {
     static void Main()
     {
-       
+
+    }
+
+    public void GetAndSetProperty()
+    {
+        var employee = new Employee()
+        {
+            Name = "Lisa",
+            Salary = 10000
+        };
+
+        Console.WriteLine($"{employee.Name}'s salary is {employee.Salary}");
     }
 
     public void BaseClassSample()
