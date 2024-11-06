@@ -1,5 +1,6 @@
 ﻿
 using Programming_Training__To_be_a_better_programmer_.Base;
+using Programming_Training__To_be_a_better_programmer_.Generic.SampleGeneric;
 using Programming_Training__To_be_a_better_programmer_.Models;
 using Programming_Training__To_be_a_better_programmer_.Static_Data;
 using Base = Programming_Training__To_be_a_better_programmer_.Base;
@@ -9,7 +10,11 @@ class Program
 {
     static void Main()
     {
+        ChildGeneric<string> parentGenericAsInt = new ChildGeneric<string>();
+        parentGenericAsInt.Child("");
 
+        ChildGeneric<string> parentGenericAsString = new ChildGeneric<string>();
+        parentGenericAsString.Child("a string value abcdefg");
     }
 
     public static void GetAndSetProperty()
