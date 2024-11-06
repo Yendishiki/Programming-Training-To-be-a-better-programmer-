@@ -10,11 +10,19 @@ class Program
 {
     static void Main()
     {
-        ChildGeneric<string> parentGenericAsInt = new ChildGeneric<string>();
-        parentGenericAsInt.Child("");
+        var people = new List<Person>
+        {
+          new Person { Name = "Alice", Pets = new List<Pet> { new Pet { Name = "Burgey"} } },
+          new Person { Name = "Bob", Pets = new List<Pet> { new Pet { Name = "Patty"} } }
+        };
 
-        ChildGeneric<string> parentGenericAsString = new ChildGeneric<string>();
-        parentGenericAsString.Child("a string value abcdefg");
+        var allPhoneNumbers = people.SelectMany(p => p.Pets);
+
+        foreach(var person in allPhoneNumbers)
+        {
+            Console.WriteLine(person.Name);
+        }
+
     }
 
     public static void GetAndSetProperty()
@@ -31,10 +39,10 @@ class Program
     public void BaseClassSample()
     {
         // ---1
-      //  Parent parent = new Child();
+        //  Parent parent = new Child();
 
         // ---2
-      //  Parent parent = new Child("call");
+        //  Parent parent = new Child("call");
 
         // ---3
         Parent parent = new Child("call", "call2");
